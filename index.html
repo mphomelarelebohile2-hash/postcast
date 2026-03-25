@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subliminal — Do Nice Things</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">SUBLIMINAL<span class="dot">●</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="episode-detail.html">Listen</a></li>
+      <li><a href="hosts.html">Hosts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- TICKER TAPE -->
+  <div class="ticker-wrap">
+    <div class="ticker-content">
+      NEW EPISODE EVERY THURSDAY &nbsp;✦&nbsp; SUBLIMINAL PODCAST &nbsp;✦&nbsp; DO NICE THINGS &nbsp;✦&nbsp; CULTURE · LIFE · EVERYTHING IN BETWEEN &nbsp;✦&nbsp; LESOTHO TO THE WORLD &nbsp;✦&nbsp; NEW EPISODE EVERY THURSDAY &nbsp;✦&nbsp; SUBLIMINAL PODCAST &nbsp;✦&nbsp; DO NICE THINGS &nbsp;✦&nbsp; CULTURE · LIFE · EVERYTHING IN BETWEEN &nbsp;✦&nbsp; LESOTHO TO THE WORLD &nbsp;✦&nbsp;
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">SUBLIMINAL</div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow">A Podcast About Culture, Life &amp; Everything In Between</p>
+      <h1 class="hero-title">Do Nice<br/><em>Things.</em></h1>
+      <p class="hero-sub">Unfiltered conversations from Lesotho to the world — where the real ones talk real things. No filter, no fluff. Just vibes.</p>
+      <div class="hero-cta">
+        <a href="episodes.html" class="btn-primary">Browse Episodes</a>
+        <a href="episode-detail.html" class="btn-ghost">▶ Play Latest</a>
+      </div>
+    </div>
+    <div class="hero-scroll">Scroll to explore</div>
+  </section>
+
+  <!-- FEATURED EPISODE -->
+  <section class="featured">
+    <div class="featured-inner">
+      <div class="featured-art">
+        <span class="ep-badge">LATEST EPISODE</span>
+        <img src="images/palesa_mohapi.jpeg" alt="Featured episode art" />
+      </div>
+      <div class="featured-meta">
+        <div class="ep-number">012</div>
+        <p class="section-label">Featured</p>
+        <h2 class="ep-title">"Soft Life or Hard Work? We Settle It."</h2>
+        <p class="ep-desc">
+          This week the girls sit down and settle once and for all — is the soft life a vibe or an excuse?
+          Palesa and Relebohole get into it about hustle culture, mental health, Gen Z work ethics,
+          and why rest is actually productive. The conversation gets spicy. You've been warned.
+        </p>
+        <div class="ep-tags">
+          <span class="tag">Lifestyle</span>
+          <span class="tag">Work &amp; Hustle</span>
+          <span class="tag">Mental Health</span>
+          <span class="tag">48 min</span>
+        </div>
+        <div class="hero-cta" style="margin-top:0.5rem;">
+          <a href="episode-detail.html" class="btn-primary">Listen Now</a>
+          <a href="episodes.html" class="btn-ghost">All Episodes</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT EPISODES -->
+  <section class="episodes-section">
+    <div class="inner">
+      <p class="section-label">Recent</p>
+      <h2 class="section-title">Latest Drops</h2>
+      <div class="episode-grid">
+
+        <article class="ep-card">
+          <div class="ep-card-thumb">
+            <img src="images/relebohole_mphomela.jpeg" alt="Episode 011" />
+            <span class="ep-num-overlay">011</span>
+          </div>
+          <div class="ep-card-body">
+            <h3 class="ep-card-title">"Friendship Red Flags Nobody Talks About"</h3>
+            <p class="ep-card-desc">The unspoken rules of friendship — toxic habits, growing apart, and how to keep it real with the people you love.</p>
+            <div class="ep-tags">
+              <span class="tag">Relationships</span>
+              <span class="tag">Growth</span>
+            </div>
+          </div>
+          <div class="ep-card-footer">
+            <span>42 min · 3 June 2025</span>
+            <a href="episode-detail.html">Listen →</a>
+          </div>
+        </article>
+
+        <article class="ep-card">
+          <div class="ep-card-thumb">
+            <img src="images/palesa_mohapi.jpeg" alt="Episode 010" />
+            <span class="ep-num-overlay">010</span>
+          </div>
+          <div class="ep-card-body">
+            <h3 class="ep-card-title">"Dating in Maseru — The Honest Truth"</h3>
+            <p class="ep-card-desc">What's dating really like in Lesotho? Expectations, situationships, social media pressure and what we really want.</p>
+            <div class="ep-tags">
+              <span class="tag">Dating</span>
+              <span class="tag">Culture</span>
+            </div>
+          </div>
+          <div class="ep-card-footer">
+            <span>55 min · 27 May 2025</span>
+            <a href="episode-detail.html">Listen →</a>
+          </div>
+        </article>
+
+        <article class="ep-card">
+          <div class="ep-card-thumb">
+            <img src="images/relebohole_mphomela.jpeg" alt="Episode 009" />
+            <span class="ep-num-overlay">009</span>
+          </div>
+          <div class="ep-card-body">
+            <h3 class="ep-card-title">"Money Talks We Were Never Taught"</h3>
+            <p class="ep-card-desc">Budgeting, saving, and financial independence as a young woman in Southern Africa. What school never told us.</p>
+            <div class="ep-tags">
+              <span class="tag">Finance</span>
+              <span class="tag">Life Skills</span>
+            </div>
+          </div>
+          <div class="ep-card-footer">
+            <span>39 min · 20 May 2025</span>
+            <a href="episode-detail.html">Listen →</a>
+          </div>
+        </article>
+
+      </div>
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="episodes.html" class="btn-ghost">View All Episodes →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOSTS PREVIEW -->
+  <section class="hosts-preview">
+    <div class="inner">
+      <p class="section-label">The Voices</p>
+      <h2 class="section-title">Meet The Hosts</h2>
+      <div class="hosts-row">
+        <div class="host-mini">
+          <img src="images/palesa_mohapi.jpeg" alt="Palesa Mohapi" />
+          <h3>Palesa Mohapi</h3>
+          <p>Co-Host &amp; Producer</p>
+        </div>
+        <div class="host-mini">
+          <img src="images/relebohole_mphomela.jpeg" alt="Relebohole Mphomela" />
+          <h3>Relebohole Mphomela</h3>
+          <p>Co-Host &amp; Creative Lead</p>
+        </div>
+        <div class="host-mini">
+          <img src="images/guest1.jpeg" alt="Guest Host" />
+          <h3>Nthabeleng Letsie</h3>
+          <p>Guest Host</p>
+        </div>
+        <div class="host-mini">
+          <img src="images/guest2.jpeg" alt="Guest Host" />
+          <h3>Mpho Sithole</h3>
+          <p>Guest Host</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="hosts.html" class="btn-ghost">Full Profiles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="nav-logo">SUBLIMINAL<span class="dot">●</span></span>
+          <p>A podcast about culture, life, and everything in between. New episodes every Thursday. Made with love in Maseru, Lesotho.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="episode-detail.html">Listen</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Listen On</h4>
+          <ul>
+            <li><a href="#">Spotify</a></li>
+            <li><a href="#">Apple Podcasts</a></li>
+            <li><a href="#">Google Podcasts</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Subliminal Podcast. All rights reserved.</span>
+        <div class="platforms">
+          <a href="#">Spotify</a>
+          <a href="#">Apple</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

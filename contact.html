@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Subliminal Podcast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">SUBLIMINAL<span class="dot">●</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="episode-detail.html">Listen</a></li>
+      <li><a href="hosts.html">Hosts</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg">CONTACT</div>
+    <div class="page-hero-inner">
+      <p class="section-label">Get In Touch</p>
+      <h1>Let's Talk</h1>
+      <p>Got a topic suggestion? Want to be a guest? A brand looking to partner with us? We'd love to hear from you.</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <div class="contact-grid">
+
+      <!-- LEFT: INFO -->
+      <div class="contact-info">
+        <h2>Say<br/>Something.</h2>
+        <p>
+          Whether you're sliding into our DMs with an episode idea, pitching a collaboration, or just
+          want to tell us the show changed your perspective — this is the place. We read everything.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-item">
+            <span>Email</span>
+            <span>hello@subliminalcast.co.ls</span>
+          </div>
+          <div class="contact-detail-item">
+            <span>Instagram</span>
+            <span>@subliminalcast</span>
+          </div>
+          <div class="contact-detail-item">
+            <span>Twitter / X</span>
+            <span>@subliminalcast</span>
+          </div>
+          <div class="contact-detail-item">
+            <span>TikTok</span>
+            <span>@subliminalcast</span>
+          </div>
+          <div class="contact-detail-item">
+            <span>Based In</span>
+            <span>Maseru, Lesotho 🇱🇸</span>
+          </div>
+        </div>
+
+        <!-- Listen platforms -->
+        <div style="margin-top:2.5rem;">
+          <p class="section-label" style="margin-bottom:1rem;">Listen On</p>
+          <div style="display:flex; flex-direction:column; gap:0.8rem;">
+            <a href="#" class="btn-ghost" style="display:inline-block; text-align:center;">🎵 Spotify</a>
+            <a href="#" class="btn-ghost" style="display:inline-block; text-align:center;">🍎 Apple Podcasts</a>
+            <a href="#" class="btn-ghost" style="display:inline-block; text-align:center;">▶ YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div>
+        <p class="section-label" style="margin-bottom:1.5rem;">Send Us A Message</p>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" placeholder="Palesa" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" placeholder="Mohapi" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="reason">Reason for Reaching Out</label>
+            <select id="reason">
+              <option value="" disabled selected>Select a reason...</option>
+              <option>Episode / Topic Suggestion</option>
+              <option>Guest Appearance Request</option>
+              <option>Brand Partnership / Sponsorship</option>
+              <option>Media Inquiry</option>
+              <option>Just Saying Hi</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What's this about?" />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Tell us what's on your mind..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="heard">How did you find us?</label>
+            <select id="heard">
+              <option value="" disabled selected>Select...</option>
+              <option>Instagram</option>
+              <option>TikTok</option>
+              <option>Spotify</option>
+              <option>Apple Podcasts</option>
+              <option>A friend recommended</option>
+              <option>YouTube</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message →</button>
+
+          <div id="success-msg" style="display:none; color:var(--accent); font-size:0.85rem; margin-top:0.5rem; letter-spacing:0.05em;">
+            ✓ Message sent! We'll get back to you soon.
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ STRIP -->
+  <section style="background:var(--surface); border-top:1px solid var(--border);">
+    <div style="max-width:900px; margin:0 auto;">
+      <p class="section-label">FAQ</p>
+      <h2 class="section-title">Quick Answers</h2>
+
+      <div style="display:flex; flex-direction:column; gap:0;">
+
+        <details style="border-bottom:1px solid var(--border); padding:1.5rem 0; cursor:pointer;">
+          <summary style="font-family:var(--font-serif); font-style:italic; font-size:1.1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            When do new episodes drop?
+            <span style="color:var(--accent); font-family:var(--font-display); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+            New episodes drop every Thursday at 8AM CAT. Subscribe on Spotify or Apple Podcasts so you never miss one.
+          </p>
+        </details>
+
+        <details style="border-bottom:1px solid var(--border); padding:1.5rem 0; cursor:pointer;">
+          <summary style="font-family:var(--font-serif); font-style:italic; font-size:1.1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Can I suggest a topic or question?
+            <span style="color:var(--accent); font-family:var(--font-display); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+            Absolutely — use the form above or DM us on Instagram. The best listener questions make it into our episodes, sometimes with a shoutout!
+          </p>
+        </details>
+
+        <details style="border-bottom:1px solid var(--border); padding:1.5rem 0; cursor:pointer;">
+          <summary style="font-family:var(--font-serif); font-style:italic; font-size:1.1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            Do you accept guest speakers?
+            <span style="color:var(--accent); font-family:var(--font-display); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+            Yes! We love bringing fresh voices onto the show. Send us a message with your name, what you do, and what you'd like to talk about. We'll be in touch.
+          </p>
+        </details>
+
+        <details style="padding:1.5rem 0; cursor:pointer;">
+          <summary style="font-family:var(--font-serif); font-style:italic; font-size:1.1rem; list-style:none; display:flex; justify-content:space-between; align-items:center;">
+            How do brand partnerships work?
+            <span style="color:var(--accent); font-family:var(--font-display); font-size:1.2rem;">+</span>
+          </summary>
+          <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.8; margin-top:1rem;">
+            We work with brands whose values align with ours — authentic, community-first, and relevant to our audience. Reach out via email and we'll send you our media kit.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="nav-logo">SUBLIMINAL<span class="dot">●</span></span>
+          <p>A podcast about culture, life, and everything in between. New episodes every Thursday. Made with love in Maseru, Lesotho.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="episode-detail.html">Listen</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Listen On</h4>
+          <ul>
+            <li><a href="#">Spotify</a></li>
+            <li><a href="#">Apple Podcasts</a></li>
+            <li><a href="#">Google Podcasts</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Subliminal Podcast. All rights reserved.</span>
+        <div class="platforms">
+          <a href="#">Spotify</a>
+          <a href="#">Apple</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('success-msg').style.display = 'block';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

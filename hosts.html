@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hosts — Subliminal Podcast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-logo">SUBLIMINAL<span class="dot">●</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="episodes.html">Episodes</a></li>
+      <li><a href="episode-detail.html">Listen</a></li>
+      <li><a href="hosts.html" class="active">Hosts</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg">THE HOSTS</div>
+    <div class="page-hero-inner">
+      <p class="section-label">The Voices Behind It All</p>
+      <h1>Meet The Team</h1>
+      <p>The real ones who show up every week, say the things others won't, and make it sound good doing it.</p>
+    </div>
+  </div>
+
+  <!-- MAIN HOSTS -->
+  <section>
+    <div style="max-width:1200px; margin:0 auto;">
+      <p class="section-label">Core Hosts</p>
+      <h2 class="section-title">The Main Cast</h2>
+
+      <div class="hosts-grid">
+
+        <!-- HOST 1 -->
+        <article class="host-card">
+          <div class="host-card-img">
+            <img src="images/palesa_mohapi.jpeg" alt="Palesa Mohapi" />
+          </div>
+          <div class="host-card-body">
+            <h2>Palesa Mohapi</h2>
+            <p class="role">Co-Host &amp; Producer</p>
+            <p>
+              Palesa is the engine behind Subliminal — equal parts bold opinion and genuine curiosity.
+              A media graduate from Limkokwing University, she brings her background in broadcasting
+              and storytelling to every episode. Known for the takes that get people talking, Palesa
+              makes sure the conversation never stays surface-level.
+            </p>
+            <p style="margin-top:0.8rem;">
+              When she's not recording, she's somewhere writing, building playlists, or picking arguments
+              she knows she'll win.
+            </p>
+            <div class="ep-tags" style="margin-top:1rem;">
+              <span class="tag">Broadcasting</span>
+              <span class="tag">Storytelling</span>
+              <span class="tag">Producer</span>
+            </div>
+            <div class="host-socials">
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- HOST 2 -->
+        <article class="host-card">
+          <div class="host-card-img">
+            <img src="images/relebohole_mphomela.jpeg" alt="Relebohole Mphomela" />
+          </div>
+          <div class="host-card-body">
+            <h2>Relebohole Mphomela</h2>
+            <p class="role">Co-Host &amp; Creative Lead</p>
+            <p>
+              Relebohole is the vibe. She handles the creative direction of the show — from the aesthetic
+              to the angles we explore in every episode. Also a media student at Limkokwing, she brings
+              a Gen Z eye and an instinct for what people actually want to hear about.
+            </p>
+            <p style="margin-top:0.8rem;">
+              Off-mic, Rele is obsessed with fashion, digital culture, and finding new spots in Maseru
+              that nobody's written about yet.
+            </p>
+            <div class="ep-tags" style="margin-top:1rem;">
+              <span class="tag">Creative Direction</span>
+              <span class="tag">Digital Culture</span>
+              <span class="tag">Fashion</span>
+            </div>
+            <div class="host-socials">
+              <a href="#">Instagram</a>
+              <a href="#">Twitter</a>
+              <a href="#">TikTok</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GUEST HOST 1 -->
+        <article class="host-card">
+          <div class="host-card-img">
+            <img src="images/guest1.jpeg" alt="Nthabeleng Letsie" style="object-position: center;" />
+          </div>
+          <div class="host-card-body">
+            <h2>Nthabeleng Letsie</h2>
+            <p class="role">Recurring Guest Host</p>
+            <p>
+              Nthabeleng joins the show when the conversation goes deep into relationships, culture, and
+              identity. A natural in front of the mic, her perspective bridges the gap between tradition
+              and modern African womanhood.
+            </p>
+            <div class="ep-tags" style="margin-top:1rem;">
+              <span class="tag">Culture</span>
+              <span class="tag">Relationships</span>
+            </div>
+            <div class="host-socials">
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- GUEST HOST 2 -->
+        <article class="host-card">
+          <div class="host-card-img">
+            <img src="images/guest2.jpeg" alt="Mpho Sithole" style="object-position: center;" />
+          </div>
+          <div class="host-card-body">
+            <h2>Mpho Sithole</h2>
+            <p class="role">Recurring Guest Host</p>
+            <p>
+              Mpho brings the finance, entrepreneurship, and career episodes to life. Sharp, practical,
+              and never afraid to say the uncomfortable money truths — she's the one you call when you
+              need real advice, not just inspiration.
+            </p>
+            <div class="ep-tags" style="margin-top:1rem;">
+              <span class="tag">Finance</span>
+              <span class="tag">Entrepreneurship</span>
+            </div>
+            <div class="host-socials">
+              <a href="#">LinkedIn</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIVIDER -->
+  <div class="divider"></div>
+
+  <!-- ABOUT THE SHOW -->
+  <section style="background: var(--surface);">
+    <div style="max-width:800px; margin:0 auto;">
+      <p class="section-label">The Show</p>
+      <h2 class="section-title">Why We Started</h2>
+      <p style="color:var(--text-muted); font-size:1rem; line-height:1.9; margin-bottom:1.5rem;">
+        Subliminal started as a voice note. Palesa and Relebohole were in the middle of one of their
+        usual long phone calls — the kind that goes from funny to deep without warning — when they
+        thought: <em style="color:var(--text);">why isn't anyone talking about this properly?</em>
+      </p>
+      <p style="color:var(--text-muted); font-size:1rem; line-height:1.9; margin-bottom:1.5rem;">
+        So they grabbed a mic, found a quiet corner, and started recording. That was Episode 001.
+        The conversations haven't stopped since.
+      </p>
+      <p style="color:var(--text-muted); font-size:1rem; line-height:1.9; margin-bottom:2.5rem;">
+        Subliminal is for everyone who's tired of surface-level content — the young, the curious,
+        the builders, the dreamers, and the people who just want to feel less alone in what they're
+        going through.
+      </p>
+      <a href="episodes.html" class="btn-primary">Start Listening</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="nav-logo">SUBLIMINAL<span class="dot">●</span></span>
+          <p>A podcast about culture, life, and everything in between. New episodes every Thursday. Made with love in Maseru, Lesotho.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="episodes.html">Episodes</a></li>
+            <li><a href="episode-detail.html">Listen</a></li>
+            <li><a href="hosts.html">Hosts</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Listen On</h4>
+          <ul>
+            <li><a href="#">Spotify</a></li>
+            <li><a href="#">Apple Podcasts</a></li>
+            <li><a href="#">Google Podcasts</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Subliminal Podcast. All rights reserved.</span>
+        <div class="platforms">
+          <a href="#">Spotify</a>
+          <a href="#">Apple</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
